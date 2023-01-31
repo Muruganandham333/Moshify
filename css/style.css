@@ -154,3 +154,24 @@ a{
     }
 }
 
+/* ICON */
+
+.icon{
+    height: 40px;
+    width: 40px;
+}
+
+.icon--primary{
+   color: var(--primary-color);
+}
+
+.icon-container{
+    background-color: #f3f9fa;
+    height: 64px;
+    width: 64px;
+    display: inline-flex;
+    border-radius: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
