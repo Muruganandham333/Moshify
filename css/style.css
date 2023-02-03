@@ -170,6 +170,11 @@ a{
     width: 40px;
 }
 
+.svg{
+    border-radius: 50%;
+}
+
+
 .icon--primary{
    color: var(--primary-color);
 }
@@ -186,6 +191,10 @@ a{
 
 .icon-container--accent{
     color: var(--accent-color);
+}
+
+.icon--white{
+    background-color: var(--white-color);
 }
 
 /* BUTTON */
@@ -523,7 +532,7 @@ a{
  }
 
  .callout .btn{
-    justify-self: center;
+    .justify-self: center;
     align-self: center;
  }
 
@@ -548,6 +557,43 @@ a{
     
  }
 
+ /* COLLAPSIBLE */
+
+
+.collapsible__header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.collapsible__heading{
+    margin-top: 0;
+    font-size: 3rem;
+}
+
+.collapsible__header .icon{
+    align-self: center;
+}
+
+.collapsible__chevron{
+    transform: rotate(-90deg);
+    transition: transform  0.3s;
+}
+
+.collapsible__content{
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.collapsible__expanded .collapsible__chevron{
+    transform: rotate(0);
+}
+
+.collapsible__expanded .collapsible__content{
+    max-height: 100vh;
+    opacity: 1;
+}
 
 
 
