@@ -138,7 +138,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--heading-color);
 }
 
 .list--inline .list__item {
@@ -149,6 +148,7 @@ a {
 .list--tick {
   list-style-image: url(../images/tick.png);
   padding-left: 3rem;
+  color: var(--heading-color);
 }
 
 .list--tick .list__item {
@@ -415,6 +415,7 @@ a {
 /* MEDIA */
 .media {
   display: flex;
+  padding-bottom: 4rem;
 }
 
 .media__title {
@@ -619,20 +620,22 @@ a {
   color: var(--body-color);
 }
 
-.block--dark .block__heading {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: var(--white-color);
 }
 
 .block--skewed-right {
   /* TODO:using calc function not working  */
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
   /* padding-bottom: calc(var(--padding-vertical) +4rem); */
   padding-bottom: 10rem;
 }
 
 .block--skewed-left {
   /* TODO:using calc function not working  */
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
   /* padding-bottom: calc(var(--padding-vertical) +4rem); */
   padding-bottom: 10rem;
 }
@@ -710,10 +713,6 @@ a {
 }
 
 /* HERO */
-
-.hero {
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-}
 
 .hero__tagline {
   font-size: 2rem;
@@ -797,5 +796,26 @@ a {
 
   .feature:first-of-type {
     margin-top: 6rem;
+  }
+}
+
+/* SHOWCASE */
+
+.block-showcase__image > img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase .grid {
+    grid-template-columns: 50% 50%;
+  }
+
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image > img {
+    width: auto;
+    max-width: 700px;
   }
 }
