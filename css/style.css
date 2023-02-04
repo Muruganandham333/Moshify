@@ -174,7 +174,9 @@ a {
 }
 
 .icon--primary {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  filter: invert(42%) sepia(66%) saturate(2570%) hue-rotate(199deg)
+    brightness(99%) contrast(106%);
 }
 
 .icon-container {
@@ -192,7 +194,9 @@ a {
 }
 
 .icon--white {
-  background-color: var(--white-color);
+  /* background-color: var(--white-color); */
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(177deg)
+    brightness(111%) contrast(101%);
 }
 
 /* BUTTON */
