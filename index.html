@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Moshify -Deploy wesite on $9</title>
+    <meta name="description" content="Deploy website on the lowest cost" />
+    <meta property="og:title" content="Moshify" />
+    <meta property="og:description" content="Moshify ..." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="http://" />
+    <meta property="og:url" content="http://muruga.com" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +20,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header>
@@ -68,14 +76,14 @@
         </button>
       </div>
 
-      <div class="list block-domain__prices">
+      <ul class="list block-domain__prices">
         <li><span class="badge badge--secondary">.com $9</span></li>
         <li>.sg $10</li>
         <li>.space $11</li>
         <li>.info $14</li>
         <li>.net $10</li>
         <li>.xyz $10</li>
-      </div>
+      </ul>
     </section>
 
     <section class="block container block-plans">
@@ -239,13 +247,13 @@
         <h2>User-friendly Control Panel</h2>
       </header>
       <div class="container grid grid--1x2">
-        <picture class="block-showcase__image">
+        <picture class="block-showcase__image" data-aos="flip-right">
           <source
             type="image/webp"
             srcset="images/ipad@1x.webp 1x, images/ipad@2x.webp 2x" />
           <img src="images/ipad.png" alt=""
         /></picture>
-        <ul class="list">
+        <ul class="list" data-aos="flip-left">
           <li>
             <div class="media">
               <div class="media__image">
@@ -346,6 +354,127 @@
       </div>
     </section>
 
+    <div class="container">
+      <div class="callout callout--primary callout-signup">
+        <div class="grid grid--1x2">
+          <div class="callout__content">
+            <h2 class="callout__heading">Ready to Get Started?</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi
+              voluptate tempora qui distinctio consequatur aliquid pariatur
+              cupiditate quas cum fugit.
+            </p>
+          </div>
+          <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="block block--dark footer">
+      <div class="grid footer__sections">
+        <section class="collapsible collapsible__expanded footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">Product</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="icon icon--white svg collapsible__chevron"
+            >
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              />
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Website Hosting</a></li>
+              <li><a href="#">Free Automated Wordpress</a></li>
+              <li><a href="#">Migrations</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">COMPANY</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="icon icon--white svg collapsible__chevron"
+            >
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              />
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Affiliates</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">SUPPORT</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="icon icon--white svg collapsible__chevron"
+            >
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              />
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">Knowledge Base</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="collapsible footer__section">
+          <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading">DOMAINS</h2>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              class="icon icon--white svg collapsible__chevron"
+            >
+              <!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+              />
+            </svg>
+          </header>
+          <div class="collapsible__content">
+            <ul class="list">
+              <li><a href="#">Domain Checker</a></li>
+              <li><a href="#">Domain Transfer</a></li>
+              <li><a href="#">Free Domain</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="footer__brand">
+          <img src="images/logo.svg" alt="" />
+          <p class="footer__copyright">Copyright 2023 Murugannadham</p>
+        </section>
+      </div>
+    </footer>
+
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
